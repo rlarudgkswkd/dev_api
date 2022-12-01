@@ -44,7 +44,7 @@ public class Account {
         this.pw = pw;
         this.authorities = authorities;
         this.activated = activated;
-        this.tokenWeight = 1L; // 초기 가중치는 1
+//        this.tokenWeight = 1L; // 초기 가중치는 1
     }
 
 }
