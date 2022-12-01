@@ -8,13 +8,14 @@ server:
 spring:
   h2:
     console:
-      enabled: 'true'
+      enabled: true
       path: /h2-console
   datasource:
     hikari:
       username: sa
-      #jdbc-url: jdbc:h2:mem:testdb;MODE=MYSQL
-      url=jdbc:h2:tcp://localhost/~/test;MODE=MySQL:
+#      jdbc-url: jdbc:h2:mem:testdb;MODE=MYSQL
+#      url=jdbc:h2:tcp://localhost/~/test;MODE=MySQL:
+      jdbc-url : jdbc:h2:tcp://localhost/~/test
     driverClassName: org.h2.Driver
     password: '1234'
   jpa:
@@ -29,7 +30,7 @@ spring:
 
     defer-datasource-initialization: true
 
-jwt:
-  header: Authorization
-  secret: rutyweorituwyerotiuweyrtoiuweyrtoweiurtywoeighdfsojkghsdfgsdofiguwyertouw | base64 YWprbGdoc2Rma2xnanNkaGZnbGprc2RmZ2hsc2
-  access-token-validity-in-seconds: 600 # 10 min
+#jwt:
+#  header: Authorization
+#  secret: rutyweorituwyerotiuweyrtoiuweyrtoweiurtywoeighdfsojkghsdfgsdofiguwyertouw | base64 YWprbGdoc2Rma2xnanNkaGZnbGprc2RmZ2hsc2
+#  access-token-validity-in-seconds: 600 # 10 min
